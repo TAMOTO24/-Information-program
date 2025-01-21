@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family: 'Comfortaa', cursive;
+font-weight: bold;
+color: #464646;
+}
+QMainWindow{
+background: white;
+}
+QScrollArea{
+border: none;
+}
+QScrollBar:vertical {
+width: 10px;
+  border-radius: 10px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QScrollBar::handle:vertical {
+    background: rgb(101, 199, 198);
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}
+#Number{
+font-size: 15px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" rowspan="6">
+     <widget class="QFrame" name="leftTab">
+      <property name="maximumSize">
+       <size>
+        <width>135</width>
+        <height>568</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: rgb(240, 249, 248);
+}
+QPushButton{
+font-size: 15px;
+font-weight: bold;
+border: 0px solid none;
+padding: 10px;
+}
+QPushButton:hover{
+border: 2px dashed rgb(101, 199, 198);
+}
+#leftTab{
+padding-left: 0px;
+padding-right: 0px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="leftTabGrid_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="logoPhoto">
+         <property name="styleSheet">
+          <string notr="true">padding: 30px;
+margin: 30px;
+border-image: url(img/clear-logo.png);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">padding: 0px;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page1">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Заповнення даних</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="line">
+            <property name="styleSheet">
+             <string notr="true">padding: 0px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="styleSheet">
+             <string notr="true">*{
+padding: 0px;
+background: transparent;
+}
+*{
+color: #464646;
+border: 1px solid #464646;
+font-size: 13px;
+}
+QScrollArea{
+border: none;
+}
+QLabel{
+border: none;
+font-size: 20px;
+}
+#scrollAreaWidgetContents{
+border: none;
+}
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustIgnored</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>-484</y>
+               <width>569</width>
+               <height>1465</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QScrollBar::handle {
+        border-radius: 5px;
+}
+QPushButton{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}
+QLabel{
+margin-top: 5px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(101, 199, 198);
+}
+QLineEdit{
+border: 2px solid black;
+border-top: none;
+border-right: none;
+border-left: none;
+}
+QScrollBar:vertical {
+	border-radius: 10px;
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="24" column="1">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>50</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="12" column="0" colspan="5">
+               <widget class="QLineEdit" name="dateLine">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="Date">
+                <property name="text">
+                 <string>Дата народження</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" rowspan="2" colspan="5">
+               <widget class="QLabel" name="photoScreen">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>202</width>
+                  <height>202</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>202</width>
+                  <height>202</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    border: 2px dashed black;
+    font-size: 30px;
+    padding: 80px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>+</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0" colspan="5">
+               <widget class="QLineEdit" name="year_oldLine"/>
+              </item>
+              <item row="23" column="0">
+               <widget class="QPushButton" name="imgAdd">
+                <property name="text">
+                 <string>Додати зображення</string>
+                </property>
+               </widget>
+              </item>
+              <item row="27" column="0" colspan="5">
+               <widget class="QListWidget" name="docFileList">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="1">
+               <widget class="QPushButton" name="previousPage">
+                <property name="text">
+                 <string>&lt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="2">
+               <widget class="QPushButton" name="nextPage">
+                <property name="text">
+                 <string>&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="33" column="0" colspan="5">
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="9" column="0" colspan="2">
+               <widget class="QLabel" name="yearOldText">
+                <property name="text">
+                 <string>Вік</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0" colspan="2">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>ФІО</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="photoText">
+                <property name="text">
+                 <string>Фото лиця</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="0" colspan="3">
+               <widget class="QStackedWidget" name="otherPhotosList">
+                <property name="minimumSize">
+                 <size>
+                  <width>395</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>395</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget{
+padding-left: 10%;
+padding-right: 10%;
+}</string>
+                </property>
+                <widget class="QWidget" name="page">
+                 <layout class="QHBoxLayout" name="_2">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetDefaultConstraint</enum>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>Empty</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="faceIMGDelete">
+                <property name="text">
+                 <string>видалити</string>
+                </property>
+               </widget>
+              </item>
+              <item row="28" column="0">
+               <widget class="QPushButton" name="btn_addFile">
+                <property name="text">
+                 <string>Додати</string>
+                </property>
+               </widget>
+              </item>
+              <item row="25" column="0" colspan="5">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Додання файлів(.doc .docx)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="32" column="0">
+               <widget class="QPushButton" name="nextSettingsPage">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Наступна сторінка</string>
+                </property>
+               </widget>
+              </item>
+              <item row="31" column="0" colspan="5">
+               <widget class="QTextEdit" name="textEdit">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>200</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="3" colspan="2">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>№ Сторінки</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QPushButton" name="faceIMGAdd">
+                <property name="text">
+                 <string>Додати зображення</string>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="0">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Додаток</string>
+                </property>
+               </widget>
+              </item>
+              <item row="23" column="1" colspan="2">
+               <widget class="QPushButton" name="imgDelete">
+                <property name="text">
+                 <string>Видалити</string>
+                </property>
+               </widget>
+              </item>
+              <item row="32" column="1" colspan="4">
+               <widget class="QPushButton" name="cancel_page">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Скасувати</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0" colspan="5">
+               <widget class="QLineEdit" name="FIOLine">
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string notr="true"/>
+                </property>
+                <property name="echoMode">
+                 <enum>QLineEdit::Normal</enum>
+                </property>
+                <property name="dragEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="placeholderText">
+                 <string notr="true"/>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="5">
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="28" column="1" colspan="4">
+               <widget class="QPushButton" name="btn_deleteFile">
+                <property name="text">
+                 <string>Видалити</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="1" colspan="3">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>50</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="29" column="0">
+               <widget class="QLabel" name="addInfLabel">
+                <property name="text">
+                 <string>Додаткова інформація</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page2">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="2" column="0">
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="styleSheet">
+           <string notr="true">*{
+padding: 0px;
+background: transparent;
+}
+*{
+color: #464646;
+border: 1px solid #464646;
+font-size: 13px;
+}
+QScrollArea{
+border: 0px solid black;
+}
+QLabel{
+border: none;
+font-size: 20px;
+}
+#scrollAreaWidgetContents_2{
+border: none;
+}
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::HLine</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>581</width>
+             <height>495</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QScrollBar::handle {
+        border-radius: 5px;
+}
+QPushButton{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}
+QLabel{
+margin-top: 5px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(101, 199, 198);
+}
+QLineEdit{
+border: 2px solid black;
+border-top: none;
+border-right: none;
+border-left: none;
+background: white;
+}
+QScrollBar:vertical {
+	border-radius: 10px;
+}</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="9" column="0">
+             <widget class="QPushButton" name="addNewText">
+              <property name="text">
+               <string>Додати</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <widget class="QPushButton" name="cancel_page_2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+              </property>
+              <property name="text">
+               <string>Скасувати</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Лікар</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0">
+             <widget class="QPushButton" name="nextSettingsPage2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+              </property>
+              <property name="text">
+               <string>Наступна сторінка</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <spacer name="verticalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Лікарня</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" colspan="2">
+             <spacer name="verticalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="0" colspan="2">
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="0" colspan="2">
+             <widget class="QLineEdit" name="doctor_name"/>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Порядок проходження</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QLineEdit" name="place"/>
+            </item>
+            <item row="9" column="1">
+             <widget class="QPushButton" name="deleteCurrent">
+              <property name="text">
+               <string>Видалити</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0" colspan="2">
+             <widget class="QListWidget" name="listWidget">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">*{
+padding: 5px;
+}
+QLineEdit{
+border: none;
+padding: 50px;
+
+}</string>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="autoScroll">
+               <bool>true</bool>
+              </property>
+              <property name="textElideMode">
+               <enum>Qt::ElideNone</enum>
+              </property>
+              <property name="horizontalScrollMode">
+               <enum>QAbstractItemView::ScrollPerPixel</enum>
+              </property>
+              <property name="resizeMode">
+               <enum>QListView::Adjust</enum>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>53</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Проходження лікування</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="Line" name="line_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>586</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page3">
+       <property name="minimumSize">
+        <size>
+         <width>581</width>
+         <height>568</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+padding-top: 5px;
+padding-bottom: 5px;
+color: #464646;
+border: 1px solid #464646;
+font-size: 13px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="addImg">
+          <property name="text">
+           <string>Додати</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QPushButton" name="nextPage3">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Наступна сторінка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="pushBtnDeleteIMG">
+          <property name="text">
+           <string>Видалити</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>15</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_11">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>53</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Фото рентгену - Початок</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>586</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QPushButton" name="cancel_page_3">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Скасувати</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QListWidget" name="imageWidget">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideMiddle</enum>
+          </property>
+          <property name="movement">
+           <enum>QListView::Static</enum>
+          </property>
+          <property name="flow">
+           <enum>QListView::LeftToRight</enum>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="gridSize">
+           <size>
+            <width>270</width>
+            <height>209</height>
+           </size>
+          </property>
+          <property name="viewMode">
+           <enum>QListView::IconMode</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+padding-top: 5px;
+padding-bottom: 5px;
+color: #464646;
+border: 1px solid #464646;
+font-size: 13px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>581</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QListWidget" name="listWidget_end">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideMiddle</enum>
+          </property>
+          <property name="movement">
+           <enum>QListView::Static</enum>
+          </property>
+          <property name="flow">
+           <enum>QListView::LeftToRight</enum>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="gridSize">
+           <size>
+            <width>270</width>
+            <height>210</height>
+           </size>
+          </property>
+          <property name="viewMode">
+           <enum>QListView::IconMode</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="selectionRectVisible">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_12">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>53</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Фото рентгену - Кінець</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="addIMG2">
+          <property name="text">
+           <string>Додати</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="saveChanges">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Зберегти дані</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="deleteIMG2">
+          <property name="text">
+           <string>Видалити</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>15</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="cancel_page_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Скасувати</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

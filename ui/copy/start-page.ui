@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family: 'Comfortaa', cursive;
+font-weight: bold;
+color: #464646;
+}
+QMainWindow{
+background: white;
+}
+
+QScrollBar:vertical {
+width: 10px;
+  border-radius: 10px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QScrollBar::handle:vertical {
+    background: rgb(101, 199, 198);
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="1" column="2">
+     <widget class="QLabel" name="mainText">
+      <property name="styleSheet">
+       <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 0px;
+margin: 0px;</string>
+      </property>
+      <property name="text">
+       <string>Реєстратура</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="3">
+     <widget class="QPushButton" name="add_new_member_btn">
+      <property name="styleSheet">
+       <string notr="true">*{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+padding: 20px;
+margin-left: 8px;
+margin-right: 8px;
+border-radius: 10px;
+margin-bottom: 10px;
+font-size: 40px;
+}
+*:hover{
+border: 2px solid  rgb(101, 199, 198);
+background: whitesmoke;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="3">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">padding: 0px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::HLine</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1" colspan="3">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px;
+padding: 0px;
+background: transparent;</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>580</width>
+         <height>324</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>574</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout"/>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(ad-6.png);
+margin: 5px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="8">
+     <widget class="QFrame" name="leftTab">
+      <property name="maximumSize">
+       <size>
+        <width>135</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: rgb(240, 249, 248);
+}
+QPushButton{
+font-size: 15px;
+font-weight: bold;
+border: 0px solid none;
+padding: 10px;
+}
+QPushButton:hover{
+border: 2px dashed rgb(101, 199, 198);
+}
+#leftTab{
+padding-left: 0px;
+padding-right: 0px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="leftTabGrid">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="logoPhoto">
+         <property name="styleSheet">
+          <string notr="true">padding: 30px;
+margin: 30px;
+border-image: url(clear-logo.png);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="3">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid  rgb(101, 199, 198);
+border-radius: 10px;
+margin-left: 5px;
+margin-right: 5px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

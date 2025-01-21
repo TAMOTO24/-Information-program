@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>715</width>
+    <height>568</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+font-family: 'Comfortaa', cursive;
+font-weight: bold;
+color: #464646;
+}
+QMainWindow{
+background: white;
+}
+
+QScrollBar:vertical {
+width: 10px;
+  border-radius: 10px;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QScrollBar::handle:vertical {
+    background: rgb(101, 199, 198);
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="leftTab">
+      <property name="maximumSize">
+       <size>
+        <width>135</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+background-color: rgb(240, 249, 248);
+}
+QPushButton{
+font-size: 15px;
+font-weight: bold;
+border: 0px solid none;
+padding: 10px;
+}
+QPushButton:hover{
+border: 2px dashed rgb(101, 199, 198);
+}
+</string>
+      </property>
+      <layout class="QGridLayout" name="leftTabGrid_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="logoPhoto_2">
+         <property name="styleSheet">
+          <string notr="true">padding: 30px;
+margin: 30px;
+border-image: url(img/clear-logo.png);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="btn_exit_2">
+         <property name="text">
+          <string>Вихід</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="preview">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 11px;</string>
+         </property>
+         <property name="text">
+          <string>Переглянути друк</string>
+         </property>
+         <property name="autoRepeat">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="autoRepeatDelay">
+          <number>20</number>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="print">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Роздрукувати</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page1">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="maximumSize">
+           <size>
+            <width>580</width>
+            <height>568</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#scrollArea{
+
+border: 1px solid black;
+border-top: 0px;
+border-bottom: 0px;
+background: transparent;
+}</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>562</width>
+             <height>1163</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">*{
+margin: 0px;
+font-size: 20px;
+background: transparent;
+color: #464646;
+}
+QLabel{
+border: 2px solid #464646;
+border-top: none;
+border-right: none;
+border-left: none;
+}
+QPushButton{
+font-size: 13px;
+padding-top: 5px;
+padding-bottom: 5px;
+border: 1px solid #464646;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="14" column="1">
+             <widget class="QPushButton" name="next">
+              <property name="text">
+               <string>&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0" colspan="3">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="19" column="1" colspan="2">
+             <widget class="QPushButton" name="goBack_btn">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+              </property>
+              <property name="text">
+               <string>Повернутися</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="0">
+             <widget class="QPushButton" name="previous">
+              <property name="text">
+               <string>&lt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0" colspan="3">
+             <widget class="QLabel" name="inf">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>510</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 1px solid black;
+font-size: 14px;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="margin">
+               <number>2</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="birthDate">
+              <property name="styleSheet">
+               <string notr="true">font-size: 15px;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="2">
+             <widget class="QLabel" name="listCount">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>№ Сторінки</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="AddictionalText">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>Додатки</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="0" colspan="3">
+             <widget class="QListWidget" name="doc_list">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="0" colspan="3">
+             <widget class="QStackedWidget" name="Addictional">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: 1px solid black;</string>
+              </property>
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="years_old">
+              <property name="styleSheet">
+               <string notr="true">font-size: 15px;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" rowspan="3">
+             <widget class="QLabel" name="photo">
+              <property name="minimumSize">
+               <size>
+                <width>230</width>
+                <height>180</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>230</width>
+                <height>180</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+padding: 50px;
+padding-bottom: 50px;
+border: 2px dashed #464646;
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="21" column="0" colspan="3">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="15" column="0" colspan="3">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="0" colspan="3">
+             <widget class="QLabel" name="FIO">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>Кількість років</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="3">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>Дата</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="infText">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>Інформація</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">border: 0px;</string>
+              </property>
+              <property name="text">
+               <string>Документ Doc, Docx</string>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="0">
+             <widget class="QPushButton" name="nextPage">
+              <property name="minimumSize">
+               <size>
+                <width>270</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+              </property>
+              <property name="text">
+               <string>Наступна сторінка</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page2">
+       <property name="styleSheet">
+        <string notr="true">*{
+margin: 0px;
+font-size: 20px;
+background: transparent;
+color: #464646;
+}
+QLabel{
+border: 2px solid #464646;
+border-top: none;
+border-right: none;
+border-left: none;
+}
+QPushButton{
+font-size: 13px;
+padding-top: 5px;
+padding-bottom: 5px;
+border: 1px solid #464646;
+}
+QPushButton:hover{
+border: 2px dashed #464646;
+}
+QPushButton:pressed {
+   background: rgb(240, 249, 248);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="6" column="0" colspan="2">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">border: none;</string>
+          </property>
+          <property name="text">
+           <string>Лікар</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="QListWidget" name="listWidget">
+          <property name="styleSheet">
+           <string notr="true">padding: 5px;
+font-size: 15px;</string>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="showDropIndicator" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="flow">
+           <enum>QListView::TopToBottom</enum>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="modelColumn">
+           <number>0</number>
+          </property>
+          <property name="uniformItemSizes">
+           <bool>false</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="selectionRectVisible">
+           <bool>true</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QPushButton" name="nextPage2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Наступна сторінка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">border: none;</string>
+          </property>
+          <property name="text">
+           <string>Лікарня</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="place">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="Line" name="line_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>586</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="8" column="1">
+         <widget class="QPushButton" name="previousPage2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Попередня сторіка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="doctor_name">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QPushButton" name="goBack_btn_2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Повернутися</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page3">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="6" column="0" colspan="2">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QListWidget" name="imageWidget">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideMiddle</enum>
+          </property>
+          <property name="flow">
+           <enum>QListView::LeftToRight</enum>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="gridSize">
+           <size>
+            <width>270</width>
+            <height>210</height>
+           </size>
+          </property>
+          <property name="viewMode">
+           <enum>QListView::IconMode</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="nextPage3">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Наступна сторінка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QPushButton" name="goBack_btn_3">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+margin-right: 6px;
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Скасувати</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>586</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_11">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>53</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Фото рентгену - Початок</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="previousPage3">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Попередня сторінка</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page4">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_12">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>53</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size: 30px;
+font-weight: bold;
+padding: 10px;</string>
+          </property>
+          <property name="text">
+           <string>Фото рентгену - Кінець</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QListWidget" name="listWidget_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectItems</enum>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>250</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::ElideMiddle</enum>
+          </property>
+          <property name="movement">
+           <enum>QListView::Static</enum>
+          </property>
+          <property name="flow">
+           <enum>QListView::LeftToRight</enum>
+          </property>
+          <property name="isWrapping" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="gridSize">
+           <size>
+            <width>270</width>
+            <height>210</height>
+           </size>
+          </property>
+          <property name="viewMode">
+           <enum>QListView::IconMode</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>571</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>571</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>586</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="previousPage4">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Попередня сторінка</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="goBack_btn_4">
+          <property name="minimumSize">
+           <size>
+            <width>270</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid rgb(101, 199, 198);
+background: rgb(101, 199, 198);
+padding: 10px;
+border-radius: 10px;
+font-size: 20px;
+color: rgb(240, 249, 248);
+margin-right: 6px;
+}
+QPushButton:hover{
+border: 2px dashed  rgb(101, 199, 198);
+color: rgb(101, 199, 198);
+background: rgb(240, 249, 248);
+}</string>
+          </property>
+          <property name="text">
+           <string>Скасувати</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
